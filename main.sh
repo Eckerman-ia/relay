@@ -85,7 +85,7 @@ tmux new -d -s cors "node app.js"
 cd ../bungee
 tmux new -d -s bungee "java -Xmx128M -jar bungee.jar"
 cd ../viaaas
-java -Xmx512M -jar viaaas.jar -host=127.0.0.1 -port=8082
+java -Xmx512M -jar viaaas.jar -host=10.64.198.192 -port=8082
 cd ..
 tmux kill-session -t bungee
 tmux kill-session -t cors
